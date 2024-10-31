@@ -42,8 +42,8 @@ jobs:
       id-token: write
     runs-on: ubuntu-latest
     environment:
-      name: production
-      url: https://pizza.duane2222.xyz
+      name: staging
+      url: https://stage-pizza.duane2222.xyz
     env:
       version: ${{needs.build.outputs.version}}
     steps:
